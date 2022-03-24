@@ -1,3 +1,6 @@
 .nav {
-background-color: gold;
+    background-color: rgba(215, 188, 33, 0.91);
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
 }
