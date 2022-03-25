@@ -10,10 +10,19 @@
 
 .title {
     background-color: antiquewhite;
+    height: 20vh;
 }
 
 .skills {
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+.allSkills {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }

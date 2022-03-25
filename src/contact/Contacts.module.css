@@ -1,0 +1,35 @@
+.contactsMain {
+    background-color: rgba(255, 119, 135, 0.62);
+    height: 40vh;
+}
+
+.contacts {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    font-size: 4vh;
+}
+
+.formAboutMe {
+    height: 40%;
+    width: 40%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonSend {
+    background-color: #d72f2f;
+    font-size: 4vh;
+    width: 40%;
+    text-align: center;
+}
