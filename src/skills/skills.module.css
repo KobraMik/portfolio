@@ -4,7 +4,7 @@
 }
 
 .skillsContainer {
-    flex-direction: column;
+flex-direction: column;
     justify-content: flex-start;
 }
 
@@ -17,6 +17,9 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    border: 1px #ffae77 solid;
+    flex-wrap: wrap;
+
 }
 .allSkills {
     display: flex;
@@ -24,5 +27,4 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
 }

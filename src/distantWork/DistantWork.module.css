@@ -12,11 +12,11 @@
     justify-content: space-around;
 }
 .text{
-    font-size: 30px;
+    font-size: 3vh;
 }
 .button{
     background-color: #d72f2f;
-    font-size: 30px;
+    font-size: 3vh;
     width: 30%;
     text-align: center;
 }

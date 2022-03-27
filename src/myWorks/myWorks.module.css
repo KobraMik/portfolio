@@ -1,12 +1,14 @@
 .myWorksBlockMain{
     background-color: darkkhaki;
     width: 100%;
+
 }
 
 .myWorksBlockBody {
     height: 100vh;
     width: 80%;
     margin: 0 auto;
+    border: 1px solid;
 }
 
 .myWorksTitle {
@@ -19,14 +21,16 @@
     height: 80vh;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .block {
-    width: 30vh;
+    width: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+    border: 1px solid;
 }
 
 .image {
@@ -39,11 +43,13 @@
 }
 
 .buttonWatch {
-    width: 40%;
-    height: 10%;
+    width: 30%;
+    height: 15%;
+    border: 1px solid;
 }
 
 .projectName {
+    margin-left: 10%;
     background-color: rosybrown;
 }
 
