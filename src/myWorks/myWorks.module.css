@@ -1,4 +1,4 @@
-.myWorksBlockMain{
+.myWorksBlockMain {
     background-color: darkkhaki;
     width: 100%;
 
@@ -13,8 +13,9 @@
 
 .myWorksTitle {
     height: 20vh;
-    background-color: rosybrown;
+    border: 1px solid;
     text-align: center;
+    font-size: 3vh;
 }
 
 .myWorksBlock {
@@ -45,6 +46,7 @@
 .buttonWatch {
     width: 30%;
     height: 15%;
+    background-color: #cc932d;
     border: 1px solid;
 }
 

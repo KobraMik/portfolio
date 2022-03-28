@@ -13,24 +13,25 @@
     justify-content: space-between;
     border: 1px solid;
 }
-.textName{
+
+.textName {
     font-size: 3vh;
 }
-.icons{
-display: flex;
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 30px;
 }
 
 
-.square{
-    width: 3vh;
-    height: 3vh;
+.square {
+    width: 36px;
+    height: 36px;
     background-color: #3692a2;
 }
-.square2{
-    width: 3vh;
-    height: 3vh;
-    background-color: #e3de72;
-}
-.rights{
+
+.rights {
     font-size: 2vh;
 }

@@ -9,13 +9,9 @@ function Footer() {
                 <div className={style.textName}>Mikel Novi</div>
                 <div className={style.icons}>
                     <div className={style.square}></div>
-                    <div className={style.square2}></div>
                     <div className={style.square}></div>
-                    <div className={style.square2}></div>
                     <div className={style.square}></div>
-                    <div className={style.square2}></div>
                     <div className={style.square}></div>
-
                 </div>
                 <div className={style.rights}>All rights reserved</div>
             </div>

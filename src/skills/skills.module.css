@@ -1,5 +1,5 @@
 .skillsBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: cornflowerblue;
 }
 
@@ -19,7 +19,6 @@ flex-direction: column;
     justify-content: space-between;
     border: 1px #ffae77 solid;
     flex-wrap: wrap;
-
 }
 .allSkills {
     display: flex;
