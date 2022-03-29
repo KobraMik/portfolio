@@ -22,8 +22,9 @@ function MyWorks() {
                             <div className={style.buttonWatch}>Watch</div>
                         </div>
                         <div className={style.projectName}>Project name</div>
-                        <div className={style.description}>short description</div>
+                        <div className={style.description}>short descriptioshort descriptionshort descriptionshort descriptionshort descriptionshort descrshort descriptionshort descriptionshort descriptionshort descriptionshort descriptionshort descriptioniptionshort descriptionshort descriptionn</div>
                     </div>
+
                 </div>
             </div>
         </div>
