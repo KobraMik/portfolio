@@ -1,0 +1,24 @@
+.project{
+    width: 450px;
+    background-color: #ffae77;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    height: 300px;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonWatch {
+    background-color: #cc932d;
+    border: 1px solid;
+    padding: 10px 20px;
+}
+
+.description {
+
+}

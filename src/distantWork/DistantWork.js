@@ -8,7 +8,7 @@ function DistantWork() {
     return (
         <div className={style.distantWorkMain}>
             <div className={`${styleContainer.container} ${style.distantWork}`}>
-                <div className={style.text}>I will consider remote work options</div>
+                <h2 className={style.text}>I will consider remote work options</h2>
                 <div className={style.button}>Hire me</div>
             </div>
         </div>
