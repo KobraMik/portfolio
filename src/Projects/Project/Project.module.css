@@ -1,8 +1,12 @@
 .project{
     width: 450px;
-    background-color: #ffae77;
     display: flex;
     flex-direction: column;
+}
+
+.project h3 {
+    margin: 20px 20px;
+    font-weight: 300;
 }
 
 .image {
@@ -11,14 +15,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .buttonWatch {
     background-color: #cc932d;
-    border: 1px solid;
     padding: 10px 20px;
 }
 
 .description {
-
+    display: inline-block;
+    padding-bottom: 25px;
 }
