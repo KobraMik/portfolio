@@ -2,12 +2,12 @@
 
 .distantWorkMain {
   background-color: $secondBgColor;
-  height: 20vh;
+  height: 25vh;
+  margin: 30px 0px;
 
   .distantWork {
     height: 100%;
     width: 80%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;

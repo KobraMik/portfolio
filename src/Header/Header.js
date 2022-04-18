@@ -6,7 +6,9 @@ import styleContainer from "../common/styles/container.module.css";
 function Header() {
     return (
         <div className={style.header}>
-           <div className={style.navContainer}> <Nav/></div>
+            <div className={`${styleContainer.container} ${style.navContainer}`}>
+                <Nav/>
+            </div>
         </div>
     );
 }

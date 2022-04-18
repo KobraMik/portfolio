@@ -1,0 +1,32 @@
+.skill {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+
+  .icon {
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    line-height: 1.5;
+  }
+
+  .description {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+
+

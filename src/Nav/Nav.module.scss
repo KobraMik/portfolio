@@ -1,0 +1,14 @@
+.nav {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    & a {
+        color: #333;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0;
+    }
+}

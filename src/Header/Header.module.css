@@ -1,15 +1,10 @@
 .header {
-    background-color: rgb(29, 61, 44);
     height: 80px;
     align-items: center;
+
 }
 
 .navContainer {
-    border: 1px solid;
-    height: 100%;
-    width: 80%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: flex-end !important;
 }
