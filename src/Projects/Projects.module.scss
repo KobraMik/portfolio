@@ -1,6 +1,9 @@
+@import "../common/styles/sass/variables";
+
 .projectsBlock {
   min-height: 100vh;
   padding: 100px 0;
+  color: $textColor;
 
   .projectsContainer {
     flex-direction: column;

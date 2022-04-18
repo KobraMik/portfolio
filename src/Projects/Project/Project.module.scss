@@ -1,3 +1,5 @@
+@import "../../common/styles/sass/variables";
+
 .project {
   width: 450px;
   display: flex;
@@ -21,6 +23,10 @@
   & h3 {
     margin: 20px 20px;
     font-weight: 300;
+
+    a {
+      color: $titleColor;
+    }
   }
 
   .description {

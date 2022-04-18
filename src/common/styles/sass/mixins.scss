@@ -1,0 +1,9 @@
+@import "./variables";
+
+@mixin text () {
+  font: 200 16px/1.7 Kanit, sans-serif;
+  letter-spacing: 0.03em;
+  color: $textColor;
+  background-color: $primaryBgColor;
+  -webkit-font-smoothing: antialiased;
+}
