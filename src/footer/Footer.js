@@ -27,10 +27,10 @@ function Footer() {
                     <p>Powered by Michael Novitckiy</p>
                 </div>
                 <div className={style.icons}>
-                    <SocialNetwork image={linked}/>
+                    <SocialNetwork image={linked} href={'https://www.linkedin.com/in/%D0%BC%D0%B8%D1%88%D0%B0-%D0%BD%D0%BE%D0%B2%D0%B8%D1%86%D0%BA%D0%B8%D0%B9-6325351a2/'}/>
                     <SocialNetwork image={gmail}/>
-                    <SocialNetwork image={telegram}/>
-                    <SocialNetwork image={git}/>
+                    <SocialNetwork image={telegram} href={'https://web.telegram.org/z/'}/>
+                    <SocialNetwork image={git} href={'https://github.com/MichaelNovickiy'}/>
                 </div>
                 <div className={style.rights}><p>
                     All rights reserved

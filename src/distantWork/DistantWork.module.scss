@@ -2,8 +2,8 @@
 
 .distantWorkMain {
   background-color: $secondBgColor;
-  height: 25vh;
-  margin: 30px 0px;
+  height: 230px;
+  padding: 30px 0px;
 
   .distantWork {
     height: 100%;
@@ -14,8 +14,7 @@
     justify-content: space-around;
 
     .text {
-      font-size: 24px;
-      text-align: center;
+      font-size: 22px;
     }
 
     .button {

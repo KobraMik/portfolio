@@ -5,8 +5,7 @@ import style from "./SoсialNetwork.module.scss";
 function SocialNetwork(props) {
 
     return (
-        <div className={style.SocialNetwork} style={props.image}>
-        </div>
+        <a href={props.href} target="_blank" className={style.SocialNetwork} style={props.image}></a>
     );
 }
 

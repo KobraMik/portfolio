@@ -12,9 +12,9 @@ function Main() {
 
     return (
         <div className={style.mainBlock}>
-            <div className={styleContainer.container}>
+            <div className={`${styleContainer.container} ${style.mainContent}`}>
                 <div className={style.mainText}>
-                    <h2>Hi There</h2>
+                    <h1>Hi There</h1>
                     <p> I'm Michael Novitckiy and I'm learning Frontend. You see my <strong>portfolio</strong> now.</p>
                 </div>
                 <div style={image} className={style.photo}>

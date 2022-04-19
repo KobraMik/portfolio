@@ -12,9 +12,9 @@ function Contacts() {
             <div className={`${style.contacts} ${styleContainer.container}`}>
                 <Title text={'Contacts'}/>
                 <form className={style.form}>
-                    <label>First:</label> <input type="text" placeholder="You Name"/>
-                    <label>Last:</label> <input type="text" placeholder="You Last Name"/>
-                    <textarea></textarea>
+                    <label></label> <input type="text" placeholder="You Name"/>
+                    <label></label> <input type="text" placeholder="You Last Name"/>
+                    <textarea placeholder="Message"></textarea>
                 </form>
                 <div className={style.button}>
                     <Button text='Send message'/>

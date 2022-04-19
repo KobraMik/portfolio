@@ -3,19 +3,35 @@ import style from "./skills.module.scss"
 import styleContainer from "../common/styles/container.module.css"
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
+import reduxImage from "../assets/image/redux.png";
+import htmlImage from "../assets/image/html.png";
+import cssImage from "../assets/image/css.png";
+import jsImage from "../assets/image/js.png";
+import tsImage from "../assets/image/ts.png";
+import reactImage from "../assets/image/react.png";
 
 
 function Skills() {
 
-    const web = {
-        backgroundImage: 'url("https://thumbs.dreamstime.com/b/go-to-web-sign-internet-icon-logo-white-background-go-to-web-sign-internet-icon-logo-137917300.jpg")',
+    const redux = {
+        backgroundImage: `url(${reduxImage})`,
     };
     const JS = {
-        backgroundImage: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqMIl5xN5rLsOQ9_H3gO6sjKxNeqQIl8RJRQ&usqp=CAU")',
+        backgroundImage: `url(${jsImage})`,
+    };
+    const TS = {
+        backgroundImage: `url(${tsImage})`,
+    };
+    const html = {
+        backgroundImage: `url(${htmlImage})`,
+    };
+    const css = {
+        backgroundImage: `url(${cssImage})`,
     };
     const react = {
-        backgroundImage: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYMhM2R0ORpJpeyNY_OB0h6r48PuORYoJkFNhNuA58i5w5lXOfYpJ4cGna5YmorbmwB5g&usqp=CAU")',
+        backgroundImage: `url(${reactImage})`,
     };
+
 
     return (
         <div className={style.skillsBlock}>
@@ -23,26 +39,24 @@ function Skills() {
                 <Title text={'Skills'}/>
                 <div className={style.allSkills}>
                     <div className={style.skills}>
-                        <Skill image={web}
-                               title="WEB"
-                               description="description1 desavcdsv sd vsd vsdv sdv sdv sdv sdv sdv sdv sdv sdvsdvsd"/>
-                        <Skill image={JS}
-                               title="JS"
-                               description="оloremlorem loremloremloremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem "/>
                         <Skill image={react}
-                               title="REACT"
-                               description="description3 lorem description4 lorem description4 lorem description4 lorem description4  lo "/>
+                               title="react"
+                        />
+                        <Skill image={JS}
+                               title="JS"/>
+                        <Skill image={TS}
+                               title="TS"
+                        />
                         <Skill
-                            image={react}
-                            title="REACT"
-                            description="description3 lorem description4 lorem description4 lorem description4 lorem description4  lo "/>
+                            image={html}
+                            title="html"
+                        />
                         <Skill
-                            image={JS}
-                            title="JS"
-                            description="оloremlorem loremloremloremlorem lorem lorem lorem lorem loremlorem lorem lorem lorem "/>
-                        <Skill image={web}
-                               title="WEB"
-                               description="description1 desavcdsv sd vsd vsdv sdv sdv sdv sdv sdv sdv sdv sdvsdvsd"/>
+                            image={css}
+                            title="css"
+                        />
+                        <Skill image={redux}
+                               title="redux"/>
                     </div>
                 </div>
             </div>
