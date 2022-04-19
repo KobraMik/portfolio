@@ -1,21 +1,19 @@
 .contactsMain {
-    height: 40vh;
-    .contacts {
-        min-height: 100%;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        border: 1px solid;
-        .form {
-            display: flex;
-            flex-direction: column;
-            height: 60%;
-            width: 60%;
-        }
+  height: 400px;
+  .contacts {
+    flex-direction: column;
+    justify-content: space-around;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      width: 60%;
     }
+    .button{
+      margin: 30px 0;
+    }
+  }
 }
 
 

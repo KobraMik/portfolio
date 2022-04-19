@@ -1,0 +1,41 @@
+@import "../common/styles/sass/variables";
+
+.footerMain {
+  padding: 30px 0px;
+  height: 200px;
+  background-color: $secondBgColor;
+
+  .footer {
+    flex-direction: column;
+
+    .textName {
+
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      width: 200px;
+      height: 30px;
+
+      .square {
+        width: 36px;
+        height: 36px;
+        background-color: #3692a2;
+      }
+    }
+
+    .rights {
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
