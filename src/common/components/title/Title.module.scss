@@ -1,12 +1,13 @@
+@import "./src/common/styles/sass/mixins";
+
 .title {
   margin: 35px 0;
 
   & h2 {
+    @include text(("Kanit", sans-serif), 24px, 1.5, 300);
     margin: 0;
-    font-family: 'Kanit', sans-serif;
+    color: inherit;
     text-transform: uppercase;
     letter-spacing: 0.18em;
-    color: inherit;
-    font-size: 30px;
   }
 }

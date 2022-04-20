@@ -1,26 +1,43 @@
 @import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
 
 
 .mainBlock {
   height: 100vh;
   background-color: $secondBgColor;
-  .mainContent{
-    @media screen and (max-width: 1129px) {
-      justify-content: center;
+  @include flex(row, center, center, nowrap);
+
+  .container {
+    @include container();
+
+    .mainContent {
+      @include flex(row, space-between, center, nowrap);
+      @media screen and (max-width: 1029px) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
-  }
 
-  .mainText {
-    width: 300px;
-  }
+    .mainText {
 
-  .photo {
-    width: 500px;
-    height: 300px;
-    background-position: center;
-    @media screen and (max-width: 550px) {
-      width: 300px;
-      height: 200px;
+      h1 {
+        @include text(("Kanit", sans-serif), 24px, 1.5, 300);
+        @media screen and (max-width: 1029px) {
+          @include flex(row, center, center, nowrap);
+        }
+      }
+
+      @include text(("Kanit", sans-serif), 16px, 1.7, 200);
+    }
+
+    .photo {
+      width: 500px;
+      height: 300px;
+      background-position: center;
+      @media screen and (max-width: 550px) {
+        width: 300px;
+        height: 200px;
+      }
     }
   }
 }

@@ -3,13 +3,13 @@
     margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Kanit", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    line-height: 1.5;
-    font-weight: 300;
+body {
+    color: #555;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.03em;
 }
+
 
 a, textarea {
     text-decoration: none;
@@ -60,10 +60,3 @@ button:hover {
     opacity: 0.65;
 }
 
-body {
-    font: 200 16px/1.7 Kanit, sans-serif;
-    letter-spacing: 0.03em;
-    color: #555;
-    background-color: #fff;
-    -webkit-font-smoothing: antialiased;
-}

@@ -39,24 +39,12 @@ function Skills() {
                 <Title text={'Skills'}/>
                 <div className={style.allSkills}>
                     <div className={style.skills}>
-                        <Skill image={react}
-                               title="react"
-                        />
-                        <Skill image={JS}
-                               title="JS"/>
-                        <Skill image={TS}
-                               title="TS"
-                        />
-                        <Skill
-                            image={html}
-                            title="html"
-                        />
-                        <Skill
-                            image={css}
-                            title="css"
-                        />
-                        <Skill image={redux}
-                               title="redux"/>
+                        <Skill image={react} title="react"/>
+                        <Skill image={JS} title="JS"/>
+                        <Skill image={TS} title="TS"/>
+                        <Skill image={html} title="html"/>
+                        <Skill image={css} title="css"/>
+                        <Skill image={redux} title="redux"/>
                     </div>
                 </div>
             </div>
