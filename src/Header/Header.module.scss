@@ -1,0 +1,13 @@
+@import "./src/common/styles/sass/mixins";
+
+.header {
+  height: 80px;
+  @include container();
+  @include flex(row, flex-end, center, wrap);
+
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+

@@ -1,32 +1,33 @@
+@import "./src/common/styles/sass/mixins";
+
 .contactsMain {
   min-height: 400px;
 
   .contacts {
-    flex-direction: column;
-    justify-content: space-around;
+    @include container();
+    @include flex(column, space-around, center, wrap);
 
     .form {
-      display: flex;
-      flex-direction: column;
+      @include flex(column, center, center, wrap);
       min-height: 150px;
       width: 60%;
 
       input {
+        @include text((Kanit, sans-serif), 16px, 1.5, 300);
         border: 1px solid #ddd;
         width: 100%;
         height: auto;
         padding: 8px 16px;
         margin-bottom: 10px;
-        font: 300 16px Kanit, sans-serif;
         letter-spacing: 0.03em;
         color: #555;
       }
       textarea {
+        @include text((Kanit, sans-serif), 16px, 1.5, 300);
         border: 1px solid #ddd;
         width: 100%;
         padding: 8px 16px;
         height: 100px;
-        font: 300 16px Kanit, sans-serif;
         letter-spacing: 0.03em;
         color: #555;
       }

@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./skills.module.scss"
-import styleContainer from "../common/styles/container.module.css"
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
 import reduxImage from "../assets/image/redux.png";
@@ -35,9 +34,9 @@ function Skills() {
 
     return (
         <div className={style.skillsBlock}>
-            <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+            {/*<div className={`${styleContainer.container} ${style.skillsContainer}`}>*/}
+            <div className={style.skillsContainer}>
                 <Title text={'Skills'}/>
-                <div className={style.allSkills}>
                     <div className={style.skills}>
                         <Skill image={react} title="react"/>
                         <Skill image={JS} title="JS"/>
@@ -46,7 +45,6 @@ function Skills() {
                         <Skill image={css} title="css"/>
                         <Skill image={redux} title="redux"/>
                     </div>
-                </div>
             </div>
         </div>
     );
