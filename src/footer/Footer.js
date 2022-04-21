@@ -1,20 +1,24 @@
 import React from "react";
 import style from "./Footer.module.scss";
 import SocialNetwork from "./SotialNetwork/SoсialNetwork";
+import gmailLogo from "../assets/image/gmail.png";
+import linkedLogo from "../assets/image/linkedin.png";
+import telegramLogo from "../assets/image/telegram.png";
+import githubLogo from "../assets/image/github.png";
 
 function Footer() {
 
     const linked = {
-        backgroundImage: 'url("https://w7.pngwing.com/pngs/913/13/png-transparent-computer-icons-social-media-linkedin-circle-plus-payments-inc-linkedin-text-trademark-logo-thumbnail.png")',
+        backgroundImage: `url(${linkedLogo})`,
     };
     const gmail = {
-        backgroundImage: 'url("https://w7.pngwing.com/pngs/779/934/png-transparent-gmail-notifier-computer-icons-email-google-gmail-angle-white-text-thumbnail.png")',
+        backgroundImage: `url(${gmailLogo})`,
     };
     const telegram = {
-        backgroundImage: 'url("https://w7.pngwing.com/pngs/825/283/png-transparent-telegram-computer-icons-initial-coin-offering-telegram-icon-angle-triangle-instant-messaging-thumbnail.png")',
+        backgroundImage: `url(${telegramLogo})`,
     };
-    const git = {
-        backgroundImage: 'url("https://w7.pngwing.com/pngs/684/454/png-transparent-github-computer-icons-github-logo-black-silhouette-thumbnail.png")',
+    const github = {
+        backgroundImage: `url(${githubLogo})`,
     };
 
 
@@ -26,12 +30,12 @@ function Footer() {
                     </div>
                     <div className={style.icons}>
                         <SocialNetwork image={linked} href={'https://www.linkedin.com/in/%D0%BC%D0%B8%D1%88%D0%B0-%D0%BD%D0%BE%D0%B2%D0%B8%D1%86%D0%BA%D0%B8%D0%B9-6325351a2/'}/>
-                        <SocialNetwork image={gmail}/>
-                        <SocialNetwork image={telegram} href={'https://web.telegram.org/z/'}/>
-                        <SocialNetwork image={git} href={'https://github.com/MichaelNovickiy'}/>
+                        <SocialNetwork image={gmail} href={'mailto:mishanovickiy91@gmail.com'}/>
+                        <SocialNetwork image={telegram} href={'https://t.me/Michael_Novickiy'}/>
+                        <SocialNetwork image={github} href={'https://github.com/MichaelNovickiy'}/>
                     </div>
                     <div className={style.rights}><p>
-                        All rights reserved
+                        All rights reserved, 2022
                     </p></div>
                 </div>
             </div>

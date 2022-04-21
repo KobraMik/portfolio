@@ -1,28 +1,17 @@
 @import "./src/common/styles/sass/mixins";
 
 .skillsBlock {
-  min-height: 100vh;
   @include container();
-  @include flex(row, space-between, flex-start, wrap);
+  @include flex(row, center, center, wrap);
 
   .skillsContainer {
-    @include flex(column, flex-start, center, wrap);
+    @include flex(column, center, center, wrap);
 
     .skills {
       @include flex(row, space-between, center, wrap);
       @media screen and (max-width: 625px) {
         justify-content: center;
       }
-      //
-      //.reactSkill {
-      //  svg {
-      //    width: 70px;
-      //    height: 70px;
-      //    @include bgSettings();
-      //  }
-      //}
-      //.jsSkill{}
-      //.htmlSkill{}
     }
   }
 }
