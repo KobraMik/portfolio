@@ -1,4 +1,5 @@
 @import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
 
 .project {
   width: 450px;
@@ -13,25 +14,20 @@
     align-items: center;
     background-size: cover;
     background-position: center;
-
-    .buttonWatch {
-      background-color: #cc932d;
-      padding: 10px 20px;
-    }
   }
 
   & h3 {
     margin: 20px 20px;
-    font-weight: 300;
-
-    a {
-      color: $titleColor;
-    }
+    @include text(("Kanit", sans-serif), 22px, 1.5, 300);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: $titleColor;
   }
 
   .description {
-    display: inline-block;
+    @include text(("Kanit", sans-serif), 16px, 1.7, 200);
     padding-bottom: 25px;
+    color: $textColor;
   }
 }
 

@@ -8,12 +8,21 @@
   .skillsContainer {
     @include flex(column, flex-start, center, wrap);
 
-      .skills {
-        width: 100%;
-        @include flex(row, space-between, center, wrap);
-        @media screen and (max-width: 625px) {
-          justify-content: center;
-        }
+    .skills {
+      @include flex(row, space-between, center, wrap);
+      @media screen and (max-width: 625px) {
+        justify-content: center;
+      }
+      //
+      //.reactSkill {
+      //  svg {
+      //    width: 70px;
+      //    height: 70px;
+      //    @include bgSettings();
+      //  }
+      //}
+      //.jsSkill{}
+      //.htmlSkill{}
     }
   }
 }

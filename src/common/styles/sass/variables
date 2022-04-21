@@ -1,4 +1,4 @@
 $textColor: #555;
-$titleColor: inherit;
+$titleColor: #222;;
 $primaryBgColor: #fff;
 $secondBgColor: #f4f4f4 !important;

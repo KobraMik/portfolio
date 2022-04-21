@@ -8,11 +8,9 @@
 
   .distantWork {
     @include container();
+    @include flex(column, space-around, center, wrap);
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    text-align: center;
 
     .text {
       @include text(("Kanit", sans-serif), 24px, 1.5, 300);

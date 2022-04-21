@@ -1,25 +1,23 @@
+@import "./src/common/styles/sass/mixins";
+
 .skill {
+  @include flex(column, space-between, center, nowrap);
   width: 250px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 150px;
   text-align: center;
   padding: 10px;
-  box-sizing: border-box;
 
   .icon {
+    @include bgSettings();
     height: 70px;
     width: 70px;
-    background-size: cover;
   }
 
   .title {
+    @include text(("Kanit", sans-serif), 18px, 1.5, 300);
     text-align: center;
-    font-size: 18px;
-    font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.18em;
-    line-height: 1.5;
   }
 
   .description {
