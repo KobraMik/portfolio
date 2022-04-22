@@ -4,7 +4,6 @@
 
 .mainBlock {
   height: 100vh;
-  background-color: $secondBgColor;
   @include flex(row, center, center, nowrap);
 
   .container {
@@ -19,9 +18,11 @@
     }
 
     .mainText {
-
+      p {
+        @include text(("Kanit", sans-serif), 24px, 1.5, 200);
+      }
       h1 {
-        @include text(("Kanit", sans-serif), 24px, 1.5, 300);
+        @include text(("Kanit", sans-serif), 36px, 1.5, 300);
         @media screen and (max-width: 1029px) {
           @include flex(row, center, center, nowrap);
         }
@@ -31,8 +32,8 @@
     }
 
     .photo {
-      width: 500px;
-      height: 300px;
+      width: 650px;
+      height: 400px;
       background-position: center;
       @media screen and (max-width: 550px) {
         width: 300px;

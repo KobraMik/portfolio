@@ -9,7 +9,7 @@
     @include flex(column, space-around, center, wrap);
 
     .form {
-      @include flex(column, center, center, wrap);
+      @include flex(row, center, center, wrap);
       min-height: 150px;
       width: 60%;
 

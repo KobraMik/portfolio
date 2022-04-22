@@ -2,9 +2,7 @@
 @import "./src/common/styles/sass/mixins";
 
 .footerMain {
-  padding: 30px 0px;
-  height: 200px;
-  background-color: $secondBgColor;
+  height: 160px;
   @include flex(row, center, center, wrap);
 
   .footer {
@@ -20,6 +18,7 @@
       @include flex(row, space-between, center, nowrap);
       width: 250px;
       height: 30px;
+      opacity: 0.8;
 
       .square {
         width: 36px;

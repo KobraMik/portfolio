@@ -1,11 +1,11 @@
 @import "./src/common/styles/sass/mixins";
 
 .skill {
-  @include flex(column, space-between, center, nowrap);
-  width: 250px;
+  @include flex(column, space-around, center, nowrap);
+  width: 150px;
   height: 150px;
   text-align: center;
-  padding: 10px;
+  margin: 30px;
 
   .icon {
     @include bgSettings();

@@ -6,8 +6,8 @@
   & h2 {
     @include text(("Kanit", sans-serif), 24px, 1.5, 300);
     margin: 0;
-    color: inherit;
+    color: #6b6d6b;
     text-transform: uppercase;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.15em;
   }
 }

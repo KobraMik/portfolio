@@ -27,16 +27,16 @@ function Skills() {
     };
 
     return (
-        <div className={style.skillsBlock}>
+        <div className={style.skillsBlock} id='skills'>
             <div className={style.skillsContainer}>
                 <Title text={'Skills'}/>
-                <div className={style.skills}>
-                    <Skill image={react} title="react"/>
-                    <Skill image={JS} title="JavaScript"/>
-                    <Skill image={TS} title="TypeScript"/>
-                    <Skill image={html} title="html"/>
-                    <Skill image={css} title="css"/>
-                </div>
+                    <div className={style.skills}>
+                        <Skill image={react} title="react"/>
+                        <Skill image={JS} title="JavaScript"/>
+                        <Skill image={TS} title="TypeScript"/>
+                        <Skill image={html} title="html"/>
+                        <Skill image={css} title="css"/>
+                    </div>
             </div>
         </div>
     );
