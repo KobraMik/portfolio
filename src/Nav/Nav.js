@@ -1,13 +1,42 @@
 import React from "react";
 import style from './Nav.module.scss';
+import {Link, animateScroll as scroll} from "react-scroll";
 
 function Nav() {
     return (
         <div className={style.nav}>
-            <a href="">Main</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
+            <Link
+                activeClass={style.link}
+                to="main"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            >main</Link>
+            <Link
+                activeClass={style.link}
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            >skills</Link>
+            <Link
+                activeClass={style.link}
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            >projects</Link>
+            <Link
+                activeClass={style.link}
+                to="contacts"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            >contacts</Link>
         </div>
     );
 }

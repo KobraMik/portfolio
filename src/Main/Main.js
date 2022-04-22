@@ -3,6 +3,7 @@ import style from './Main.module.scss';
 import imageImport from '../assets/image/pngwing.com.png'
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
+import Tilt from 'react-tilt'
 
 function Main() {
     const image = {
@@ -11,9 +12,7 @@ function Main() {
     }
 
     return (
-
-        <div className={style.mainBlock}>
-
+        <div className={style.mainBlock} id='main'>
             <Fade button>
                 <div className={style.container}>
                     <div className={style.mainContent}>
@@ -24,8 +23,10 @@ function Main() {
                                 my portfolio now.
                             </p>
                         </div>
-                        <div style={image} className={style.photo}>
-                        </div>
+                        <Tilt className="Tilt" options={{ max : 25 }} >
+                            <div style={image} className={style.photo}></div>
+                        </Tilt>
+
                     </div>
                 </div>
             </Fade>

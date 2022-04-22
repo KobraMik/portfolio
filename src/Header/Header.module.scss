@@ -1,13 +1,19 @@
 @import "./src/common/styles/sass/mixins";
+.fix{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 
-.header {
-  height: 80px;
-  @include container();
-  @include flex(row, flex-end, center, wrap);
+  .header {
+    height: 60px;
+    @include container();
+    @include flex(row, flex-end, center, wrap);
 
-  .navContainer {
-    display: flex;
-    justify-content: space-between;
+    .navContainer {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
+
 
