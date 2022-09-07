@@ -1,22 +1,21 @@
 .nav {
-
   cursor: pointer;
-  width: 350px;
+  width: 450px;
   display: flex;
   justify-content: space-between;
 
   & a {
     color: #333;
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 0;
+    letter-spacing: 2px;
   }
 
   .link {
-    color: #d72f2f;
+    font-weight: 800;
   }
   @media screen and (max-width: 420px) {
     width: 280px;

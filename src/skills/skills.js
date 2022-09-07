@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./skills.module.scss"
-import Title from "../common/components/title/Title";
+import Title from "../common/components/Title/Title";
 import Skill from "./skill/Skill";
 import htmlImage from "../assets/image/html.png";
 import cssImage from "../assets/image/css.png";

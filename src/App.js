@@ -7,12 +7,16 @@ import Projects from "./Projects/Projects";
 import DistantWork from "./distantWork/DistantWork";
 import Contacts from "./contact/Contacts";
 import Footer from "./footer/Footer";
+import AboutMe from "./AboutMe/AboutMe";
+import {MyResume} from "./MyResume/MyResume";
 
 function App() {
     return (
         <div className="App">
             <Header/>
             <Main/>
+            <AboutMe/>
+            <MyResume/>
             <Skills/>
             <Projects />
             <DistantWork/>

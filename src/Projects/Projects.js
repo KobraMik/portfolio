@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Projects.module.scss"
 import Project from "./Project/Project";
-import Title from "../common/components/title/Title";
+import Title from "../common/components/Title/Title";
 
 
 function Projects() {

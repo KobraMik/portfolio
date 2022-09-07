@@ -1,5 +1,5 @@
 @import "./src/common/styles/sass/mixins";
-@import "./src/common/components/button/Button.module";
+@import "../common/components/Button/Button.module";
 
 .contactsMain {
   min-height: 400px;

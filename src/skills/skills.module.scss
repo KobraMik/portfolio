@@ -1,10 +1,10 @@
 @import "./src/common/styles/sass/mixins";
 
 .skillsBlock {
-  @include container();
   @include flex(row, center, center, wrap);
 
   .skillsContainer {
+    @include container();
     @include flex(column, center, center, wrap);
 
     .skills {

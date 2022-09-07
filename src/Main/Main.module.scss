@@ -21,6 +21,7 @@
       p {
         @include text(("Kanit", sans-serif), 24px, 1.5, 200);
       }
+
       h1 {
         @include text(("Kanit", sans-serif), 36px, 1.5, 300);
         @media screen and (max-width: 1029px) {
@@ -32,9 +33,10 @@
     }
 
     .photo {
-      width: 650px;
+      width: 400px;
       height: 400px;
       background-position: center;
+      margin-left: 100px;
       @media screen and (max-width: 550px) {
         width: 300px;
         height: 200px;
