@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dba4c5b2.css",
-    "main.js": "/portfolio/static/js/main.cbaba5dc.js",
+    "main.css": "/portfolio/static/css/main.1b7b95eb.css",
+    "main.js": "/portfolio/static/js/main.b0f17f94.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/pngwing.com.png": "/portfolio/static/media/pngwing.com.5c7ea543ac83edeb7d66.png",
-    "static/media/react.png": "/portfolio/static/media/react.bf78250092dd238cc079.png",
+    "static/media/photo2.png": "/portfolio/static/media/photo2.0bd3ca4485f528050197.png",
+    "static/media/sneakersMarket.png": "/portfolio/static/media/sneakersMarket.817f9c64d73ce1e4639e.png",
+    "static/media/MikhailnNavitski.pdf": "/portfolio/static/media/MikhailnNavitski.280c31c40faaad9cf663.pdf",
+    "static/media/Todolist.png": "/portfolio/static/media/Todolist.2112808a41615b833322.png",
+    "static/media/redux.svg": "/portfolio/static/media/redux.782fb38e5d91991277a7edcbf8746638.svg",
     "index.html": "/portfolio/index.html",
-    "main.dba4c5b2.css.map": "/portfolio/static/css/main.dba4c5b2.css.map",
-    "main.cbaba5dc.js.map": "/portfolio/static/js/main.cbaba5dc.js.map",
+    "static/media/typescript.svg": "/portfolio/static/media/typescript.51ebee38516b3112a998389dc3ad87f4.svg",
+    "main.1b7b95eb.css.map": "/portfolio/static/css/main.1b7b95eb.css.map",
+    "main.b0f17f94.js.map": "/portfolio/static/js/main.b0f17f94.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dba4c5b2.css",
-    "static/js/main.cbaba5dc.js"
+    "static/css/main.1b7b95eb.css",
+    "static/js/main.b0f17f94.js"
   ]
 }
