@@ -18,7 +18,7 @@ function Main() {
                     <div className={style.mainContent}>
                         <div className={style.mainText}>
                             <ReactTypingEffect text={["Hi There"]}/>
-                            <p> I'm <strong>Michael Novickiy</strong> and I'm learning Frontend. You see my portfolio now.
+                            <p> I'm <strong>Mikhail Novickiy</strong> and I learn Front-End (React). You're seeing my website-portfolio now.
                             </p>
                         </div>
                         <Tilt className="Tilt" options={{max: 25}}>

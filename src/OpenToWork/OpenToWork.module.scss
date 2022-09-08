@@ -4,7 +4,7 @@
 .openToWork {
   @include container();
   @include flex(column, space-evenly, center, wrap);
-  margin: 100px auto;
+  margin: 50px auto;
 
   .text {
     @include text(("Kanit", sans-serif), 32px, 1.5, 300);
