@@ -18,25 +18,28 @@
     }
 
     .mainText {
-      p {
-        @include text(("Kanit", sans-serif), 24px, 1.5, 200);
-      }
 
-      h1 {
+      div, span {
         @include text(("Kanit", sans-serif), 36px, 1.5, 300);
         @media screen and (max-width: 1029px) {
           @include flex(row, center, center, nowrap);
         }
       }
 
-      @include text(("Kanit", sans-serif), 16px, 1.7, 200);
+      p {
+        @include text(("Kanit", sans-serif), 24px, 1.5, 200);
+        padding-right: 20px;
+
+        strong {
+          @include text(("Kanit", sans-serif), 24px, 1.5, 600);
+        }
+      }
     }
 
     .photo {
       width: 400px;
       height: 400px;
       background-position: center;
-      margin-left: 100px;
       @media screen and (max-width: 550px) {
         width: 300px;
         height: 200px;

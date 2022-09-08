@@ -1,28 +1,22 @@
 @import "../common/styles/sass/variables";
 @import "../common/styles/sass/mixins";
 
-.distantWorkMain {
-  height: 200px;
+.distantWork {
+  @include container();
+  @include flex(column, space-evenly, center, wrap);
+  height: 150px;
+  margin: 100px auto;
 
-  .distantWork {
-    @include container();
-    @include flex(column, space-evenly, center, wrap);
-    height: 100%;
-    text-align: center;
+  .text {
+    @include text(("Kanit", sans-serif), 32px, 1.5, 300);
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
 
-    .text {
-      @include text(("Kanit", sans-serif), 24px, 1.5, 300);
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    .button {
-      background-color: #d72f2f;
-      font-size: 3vh;
-      width: 30%;
-      text-align: center;
+    .strong {
+      @include text(("Kanit", sans-serif), 32px, 1.5, 800);
     }
   }
 }
+
 
 

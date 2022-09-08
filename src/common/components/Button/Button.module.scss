@@ -1,17 +1,17 @@
 @import "./src/common/styles/sass/mixins";
 
 .button {
-  @include text(("Kanit", sans-serif), 12px, 1.7, 400);
-  width: 140px;
+  @include text(("Kanit", sans-serif), 16px, 1.5, 400);
+  width: 150px;
   border: none;
   background-color: black;
   color: white;
-  font-size: 14px;
-  margin: 10px 0;
-  padding: 0.4rem 0.6rem;
+  margin: 20px 0;
+  padding: 8px 16px;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .button:hover,

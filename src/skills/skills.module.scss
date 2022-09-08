@@ -1,22 +1,56 @@
 @import "./src/common/styles/sass/mixins";
 
 .skillsBlock {
-  @include flex(row, center, center, wrap);
+  @include flex(column, center, center, nowrap);
 
   .skillsContainer {
     @include container();
-    @include flex(column, center, center, wrap);
 
     .skills {
-      margin: 50px 0;
-      @include flex(row, space-between, center, wrap);
-      @media screen and (max-width: 788px) {
-        justify-content: center;
-      }
-      @media screen and (max-width: 625px) {
-        justify-content: center;
+      max-width: 950px;
+      @include flex(row, auto, center, wrap);
+      margin: 0 auto 60px;
+
+      .skill {
+        @include flex(column, center, center, nowrap);
+        text-transform: uppercase;
+
+        .icon {
+          font-size: 80px;
+          margin: 20px;
+          width: 100px;
+          color: #262626;
+        }
+
+        .iconImg {
+          margin: 20px;
+          height: 70px;
+          padding: 5px;
+        }
       }
     }
   }
+
+
+  //.skills {
+  //  @include flex(row, space-between, center, wrap);
+  //  width: 50px;
+  //}
+
+  //.skillsContainer {
+  //  @include container();
+  //  @include flex(column, center, center, wrap);
+  //
+  //  .skills {
+  //    margin: 50px 0;
+  //    @include flex(row, space-between, center, wrap);
+  //    @media screen and (max-width: 788px) {
+  //      justify-content: center;
+  //    }
+  //    @media screen and (max-width: 625px) {
+  //      justify-content: center;
+  //    }
+  //  }
+  //}
 }
 

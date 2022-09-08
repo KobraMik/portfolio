@@ -17,8 +17,7 @@ function Main() {
                 <div className={style.container}>
                     <div className={style.mainContent}>
                         <div className={style.mainText}>
-                            <h1><ReactTypingEffect
-                                text={["Hi There"]}/></h1>
+                            <ReactTypingEffect text={["Hi There"]}/>
                             <p> I'm <strong>Michael Novickiy</strong> and I'm learning Frontend. You see my portfolio now.
                             </p>
                         </div>

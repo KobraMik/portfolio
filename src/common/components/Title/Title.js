@@ -1,11 +1,12 @@
 import React from "react";
-import style from "./Title.module.scss"
+import styles from "./Title.module.scss"
 
 
 function Title(props) {
     return (
-        <div className={style.title}>
+        <div className={styles.title}>
             <h2>{props.text}</h2>
+            <span className={styles.border}> </span>
         </div>
     )
 }
