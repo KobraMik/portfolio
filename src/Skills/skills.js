@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./skills.module.scss"
-import Title from "../common/components/Title/Title";
+import Title from "../Common/components/Title/Title";
 import {faReact, faJs, faGithub, faHtml5, faCss3Alt} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import redux from "../assets/image/redux.svg"
@@ -9,13 +9,12 @@ import Fade from 'react-reveal/Fade';
 
 function Skills() {
     return (
-        <div className={styles.skillsBlock} id="skills">
+        <div className={styles.skillsBlock}>
             <Title text={"Skills"}/>
             <div className={styles.skillsContainer}>
                 <div className={styles.skills}>
                     <Fade left cascade>
-                        <div className={styles.skill}><FontAwesomeIcon icon={faHtml5} className={styles.icon}
-                                                                       size={100}/>HTML
+                        <div className={styles.skill}><FontAwesomeIcon icon={faHtml5} className={styles.icon}/>HTML
                         </div>
                     </Fade>
                     <Fade left cascade>

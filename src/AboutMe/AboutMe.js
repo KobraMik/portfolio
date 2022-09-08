@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './AboutMe.module.scss'
-import Title from "../common/components/Title/Title";
-import Button from "../common/components/Button/Button";
+import Title from "../Common/components/Title/Title";
+import Button from "../Common/components/Button/Button";
 
 const AboutMe = () => {
     return (
-        <div className={styles.aboutMeBlock}>
+        <div className={styles.aboutMeBlock} id="aboutMe">
             <div className={styles.aboutMeContainer}>
                 <Title text={'About me'}/>
                 <div className={styles.text}>

@@ -1,30 +1,49 @@
 import React from "react";
-import style from "./Projects.module.scss"
-import Project from "./Project/Project";
-import Title from "../common/components/Title/Title";
+import styles from "./Projects.module.scss"
+import Title from "../Common/components/Title/Title";
+import socialNetworkImg from "../assets/image/socialNetwork.jpg"
+import todoListImg from "../assets/image/Todolist.png"
+import sneakersMarketImg from "../assets/image/sneakersMarket.png"
+
+const projectsArr = [
+    {
+        id: 1,
+        title: "Social network",
+        href: "https://github.com/MichaelNovickiy/wayofthesamurai",
+        img: socialNetworkImg,
+        description: 'React, Redux, JavaScript/Typescript, RestAPI, HTML/CSS, functional and classes components, hooks, connect, HOC'
+    },
+    {
+        id: 2,
+        title: "Todo list",
+        href: "https://github.com/MichaelNovickiy/todolistAgain.git",
+        img: todoListImg,
+        description: 'React, Redux, TypeScript, TDD (Jest, Snapshot testing, Storybook), RestAPI, MaterialUI, HTML/CSS, functional components, hooks'
+    },
+    {
+        id: 3,
+        title: "Sneakers market",
+        href: "https://github.com/MichaelNovickiy/sneakers-market",
+        img: sneakersMarketImg,
+        description: 'HTML/SCSS, React, React-Context, JavaScript, hooks'
+    },
+]
 
 
 function Projects() {
-
-    const socialNetwork = {
-        backgroundImage: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy1nyLcMb-2Ia0NPxRmvnIYuqsKGJUA-pYVA&usqp=CAU")',
-    };
-
-    const todoList = {
-        backgroundImage: 'url("https://balancethroughsimplicity.com/wp-content/uploads/2020/04/How-to-write-a-To-Do-list-to-get-things-done-BLOG-1.jpg")',
-    }
-
     return (
-        <div className={style.projectsBlock} id='projects'>
-            <div className={style.projectsContainer}>
-                <Title text={'Projects'}/>
-                <div className={style.projects}>
-                    <Project style={socialNetwork}
-                             title={"Social network"}
-                             description={"Social networkSocial networkSocial networkSocial networkSocial networkSocial networkSocial networkSocial network"}/>
-                    <Project style={todoList}
-                             title={"Todo list"}
-                             description={"Todo listTodo listTodo listTodo listTodo listTodo "}/>
+        <div className={styles.projectsBlock} id="projects">
+            <div className={styles.projectsContainer}>
+                <Title text={"Projects"}/>
+                <div className={styles.projects}>
+                    {projectsArr.map((project) => {
+                        return (<Project key={project.id}
+                                         title={project.title}
+                                         href={project.href}
+                                         img={project.img}
+                                         description={project.description}
+                        />)
+                    })}
                 </div>
             </div>
         </div>
@@ -32,3 +51,20 @@ function Projects() {
 }
 
 export default Projects;
+
+const Project = ({title, href, img, description}) => {
+    return (
+        <div className={styles.project}>
+            <a className={styles.image}
+               style={{backgroundImage: "url(" + img + ")"}}
+               href={href}
+               target="_blank"
+            >
+            </a>
+            <h3>{title}</h3>
+            <div className={styles.description}>
+                <p>{description}</p>
+            </div>
+        </div>
+    );
+};

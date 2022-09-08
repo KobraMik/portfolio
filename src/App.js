@@ -2,11 +2,11 @@ import React from "react";
 import './App.scss';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Skills from "./skills/skills";
+import Skills from "./Skills/skills";
 import Projects from "./Projects/Projects";
-import DistantWork from "./distantWork/DistantWork";
-import Contacts from "./contact/Contacts";
-import Footer from "./footer/Footer";
+import OpenToWork from "./OpenToWork/OpenToWork";
+import Contacts from "./Contact/Contacts";
+import Footer from "./Footer/Footer";
 import AboutMe from "./AboutMe/AboutMe";
 import {MyResume} from "./MyResume/MyResume";
 
@@ -19,7 +19,7 @@ function App() {
             <MyResume/>
             <Skills/>
             <Projects />
-            <DistantWork/>
+            <OpenToWork/>
             <Contacts/>
             <Footer/>
         </div>

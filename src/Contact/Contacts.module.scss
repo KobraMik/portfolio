@@ -1,0 +1,61 @@
+@import "../Common/styles/sass/mixins";
+@import "../Common/components/Button/Button.module";
+
+.contactsMain {
+  min-height: 100vh;
+
+  .contacts {
+    @include container();
+    @include flex(column, space-around, center, wrap);
+
+    .contactsBlock {
+      @include flex(row, auto, auto, nowrap);
+      width: 100%;
+      min-height: 70vh;
+
+      .info {
+        width: 40%;
+        padding: 10px;
+
+        div {
+          line-height: 2.2;
+        }
+
+        div strong {
+          display: inline-block;
+          width: 65px;
+        }
+      }
+
+      .form {
+        @include flex(column, auto, center, nowrap);
+        min-height: 150px;
+        width: 60%;
+        padding: 10px;
+
+        .formData {
+          width: 100%;
+
+          input, textarea {
+            @include text((Kanit, sans-serif), 16px, 2.5, 300);
+            border: 1px solid #ddd;
+            width: 100%;
+            height: auto;
+            padding: 8px 16px;
+            margin-bottom: 10px;
+            letter-spacing: 0.03em;
+            color: #555;
+          }
+
+          textarea {
+            min-height: 200px;
+            resize: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

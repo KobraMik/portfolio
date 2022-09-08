@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faBook, faFolderOpen, faInfo} from "@fortawesome/free-solid-svg-icons"
 import {ExperiencesBlock} from "./Blocks/ExperiencesBlock"
 import {EducationBlock} from "./Blocks/EducationBlock"
-import Title from "../common/components/Title/Title";
+import Title from "../Common/components/Title/Title";
 
 export const MyResume = () => {
     const state = {

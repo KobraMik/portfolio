@@ -1,0 +1,42 @@
+@import "../Common/styles/sass/variables";
+@import "../Common/styles/sass/mixins";
+
+.footerMain {
+  height: 160px;
+  @include flex(row, center, center, wrap);
+
+  .footer {
+    @include flex(column, auto, center, wrap);
+    @include container();
+    height: 120px;
+
+    .textName {
+      @include text(("Kanit", sans-serif), 20px, 1.7, 200);
+    }
+
+    .icons {
+      @include flex(row, auto, center, nowrap);
+      margin: 14px 0;
+
+      .icon {
+        font-size: 32px;
+        color: #6b6d6b;
+        margin: 0 10px;
+      }
+    }
+
+    .rights {
+      @include text(("Kanit", sans-serif), 16px, 1.7, 200);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -9,7 +9,6 @@ export const EducationBlock = (props) => {
                 <div className={s.blockArrow}> </div>
                 <div className={s.postTitle}>
                     <h4>{props.edu.companyName}</h4>
-
                 </div>
                 <div className={s.postSubtitle}>
                     faculty of: <span>{props.edu.faculty}</span><br/>

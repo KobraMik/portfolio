@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./DistantWork.module.scss";
-import Button from "../common/components/Button/Button";
+import styles from "./OpenToWork.module.scss";
+import Button from "../Common/components/Button/Button";
 
 
-function DistantWork() {
+function OpenToWork() {
     return (
-        <div className={styles.distantWork}>
+        <div className={styles.openToWork}>
             <h3 className={styles.text}>I'm <strong className={styles.strong}>Open To</strong> Work </h3>
             <a href="mailto:novickiy.mikhail@gmail.com" target="_blank">
                 <Button>Hire me</Button>
@@ -15,4 +15,4 @@ function DistantWork() {
 }
 
 
-export default DistantWork;
+export default OpenToWork;
