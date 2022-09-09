@@ -31,7 +31,7 @@ const AboutMe = () => {
                         <div><strong>Email</strong> novickiy.mikhail@gmail.com</div>
                         <div><strong>Address</strong> Minsk, Belarus</div>
                     </div>
-                    <div onClick={viewCVBtn}>
+                    <div className={styles.btn} onClick={viewCVBtn}>
                         <Button>
                             <FontAwesomeIcon icon={faEye} style={{marginRight: '5px'}}/>
                             View CV

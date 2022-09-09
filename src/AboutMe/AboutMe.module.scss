@@ -12,24 +12,47 @@
       padding: 10px;
       font-size: 20px;
       margin: 50px 0;
+      @media screen and (max-width: 768px){
+        font-size: 16px;
+        margin: 0 0 30px;
+      }
     }
 
     .aboutMe {
-      display: flex;
-      align-items: center;
+      @include flex(row, space-between, center, nowrap);
       width: 100%;
+      @media screen and (max-width: 620px) {
+        @include flex(column, space-between, center, nowrap);
+      }
 
       .info {
         padding: 10px;
-        margin-right: 200px;
 
         div {
           margin: 10px 0;
+          @media screen and (max-width: 768px){
+            @include text(("Kanit", sans-serif), 14px, 1.5, 300);
+          }
         }
 
         div strong {
           width: 70px;
           display: inline-block;
+          @media screen and (max-width: 768px){
+            @include text(("Kanit", sans-serif), 14px, 1.5, 600);
+            width: 60px;
+          }
+          @media screen and (max-width: 340px){
+          display: block;
+            margin: 5px 0;
+        }
+        }
+      }
+
+      .btn {
+        margin-right: 50px;
+        @media screen and (max-width: 620px) {
+          margin: 0;
         }
       }
     }

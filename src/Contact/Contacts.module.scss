@@ -9,21 +9,39 @@
     @include flex(column, space-around, center, wrap);
 
     .contactsBlock {
-      @include flex(row, auto, auto, nowrap);
+      @include flex(row, space-between, auto, nowrap);
       width: 100%;
       min-height: 70vh;
+      @media screen and (max-width: 700px) {
+        @include flex(column, space-between, center, nowrap);
+      }
 
-      .info {
+      .infoBlock {
         width: 40%;
         padding: 10px;
-
-        div {
-          line-height: 2.2;
+        @media screen and (max-width: 700px) {
+          width: 80%;
+          @include flex(column, auto, center, nowrap);
         }
 
-        div strong {
-          display: inline-block;
-          width: 65px;
+        .info {
+          div {
+            line-height: 2.2;
+          }
+
+          div strong {
+            display: inline-block;
+            width: 65px;
+            @media screen and (max-width: 900px) {
+              display: block;
+            }
+            @media screen and (max-width: 700px) {
+              display: inline-block;
+            }
+            @media screen and (max-width: 440px) {
+              display: block;
+            }
+          }
         }
       }
 
@@ -32,6 +50,12 @@
         min-height: 150px;
         width: 60%;
         padding: 10px;
+        @media screen and (max-width: 940px) {
+          width: 50%;
+        }
+        @media screen and (max-width: 700px) {
+          width: 80%;
+        }
 
         .formData {
           width: 100%;
@@ -45,6 +69,9 @@
             margin-bottom: 10px;
             letter-spacing: 0.03em;
             color: #555;
+            @media screen and (max-width: 440px) {
+              width: 85%;
+            }
           }
 
           textarea {
@@ -59,3 +86,8 @@
 
 
 
+@media screen and (max-width: 440px) {
+  h3{
+    @include text((Kanit, sans-serif), 20px, 1.5, 600);
+  }
+}

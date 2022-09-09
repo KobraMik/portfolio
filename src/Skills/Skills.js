@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./skills.module.scss"
+import styles from "./Skills.module.scss"
 import Title from "../Common/components/Title/Title";
 import {faReact, faJs, faGithub, faHtml5, faCss3Alt} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

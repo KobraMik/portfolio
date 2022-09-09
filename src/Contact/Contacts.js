@@ -35,11 +35,13 @@ function Contacts() {
             <div className={styles.contacts}>
                 <Title text={"Contacts"}/>
                 <div className={styles.contactsBlock}>
-                    <div className={styles.info}>
+                    <div className={styles.infoBlock}>
                         <h3>LET'S GET IN TOUCH</h3>
-                        <div><strong>Phone</strong> +375 33 618-47-00</div>
-                        <div><strong>Email</strong> novickiy.mikhail@gmail.com</div>
-                        <div><strong>Address</strong> Minsk, Belarus</div>
+                        <div className={styles.info}>
+                            <div><strong>Phone</strong> +375 33 618-47-00</div>
+                            <div><strong>Email</strong> novickiy.mikhail@gmail.com</div>
+                            <div><strong>Address</strong> Minsk, Belarus</div>
+                        </div>
                     </div>
                     <form className={styles.form} onSubmit={onSubmitHandler}>
                         <h3>DROP ME A LINE</h3>

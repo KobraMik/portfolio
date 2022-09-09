@@ -3,7 +3,7 @@
 
 
 .mainBlock {
-  height: 100vh;
+  min-height: 100vh;
   @include flex(row, center, center, nowrap);
 
   .container {
@@ -11,7 +11,7 @@
 
     .mainContent {
       @include flex(row, space-between, center, nowrap);
-      @media screen and (max-width: 1029px) {
+      @media screen and (max-width: 1000px) {
         justify-content: center;
         flex-wrap: wrap;
       }
@@ -20,18 +20,27 @@
     .mainText {
 
       div, span {
-        @include text(("Kanit", sans-serif), 36px, 1.5, 300);
-        @media screen and (max-width: 1029px) {
+        @include text(("Kanit", sans-serif), 40px, 1.5, 300);
+        @media screen and (max-width: 1000px) {
           @include flex(row, center, center, nowrap);
+          @include text(("Kanit", sans-serif), 36px, 1.5, 300);
         }
       }
 
       p {
-        @include text(("Kanit", sans-serif), 24px, 1.5, 200);
+        @include text(("Kanit", sans-serif), 28px, 1.5, 200);
         padding-right: 20px;
 
+        @media screen and (max-width: 1000px) {
+          @include text(("Kanit", sans-serif), 24px, 1.5, 200);
+          margin-bottom: 50px;
+        }
+
         strong {
-          @include text(("Kanit", sans-serif), 24px, 1.5, 600);
+          @include text(("Kanit", sans-serif), 28px, 1.5, 600);
+          @media screen and (max-width: 1000px) {
+            @include text(("Kanit", sans-serif), 24px, 1.5, 600);
+          }
         }
       }
     }
@@ -41,12 +50,9 @@
       height: 400px;
       background-position: center;
       @media screen and (max-width: 550px) {
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
       }
     }
   }
 }
-
-
-

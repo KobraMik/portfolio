@@ -2,7 +2,7 @@ import React from "react";
 import './App.scss';
 import Header from "./Header/Header";
 import Main from "./Main/Main";
-import Skills from "./Skills/skills";
+import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import OpenToWork from "./OpenToWork/OpenToWork";
 import Contacts from "./Contact/Contacts";

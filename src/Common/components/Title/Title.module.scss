@@ -9,6 +9,18 @@
     color: #6b6d6b;
     text-transform: uppercase;
     letter-spacing: 0.15em;
+    @media screen and (max-width: 900px){
+      @include text(("Kanit", sans-serif), 46px, 1.5, 400);
+    }
+    @media screen and (max-width: 768px){
+      @include text(("Kanit", sans-serif), 42px, 1.5, 400);
+    }
+    @media screen and (max-width: 620px){
+      @include text(("Kanit", sans-serif), 38px, 1.5, 400);
+    }
+    @media screen and (max-width: 440px){
+      @include text(("Kanit", sans-serif), 34px, 1.5, 400);
+    }
   }
 
   .border{

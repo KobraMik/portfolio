@@ -6,13 +6,20 @@
   @include flex(column, space-evenly, center, wrap);
   margin: 50px auto;
 
+
   .text {
     @include text(("Kanit", sans-serif), 32px, 1.5, 300);
     letter-spacing: 0.13em;
     text-transform: uppercase;
+    @media screen and (max-width: 440px){
+      @include text(("Kanit", sans-serif), 24px, 1.5, 300);
+    }
 
     .strong {
       @include text(("Kanit", sans-serif), 32px, 1.5, 800);
+      @media screen and (max-width: 440px){
+        @include text(("Kanit", sans-serif), 24px, 1.5, 800);
+      }
     }
   }
 }
