@@ -1,16 +1,34 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import style from "./Header.module.scss";
 import {Link} from "react-scroll";
+import {BurgerMenu} from "./BurgerMenu/BurgerMenu";
 
 function Header() {
+
+    const [showBigHeader, setShowBigHeader] = useState(window.matchMedia("(min-width: 620px)").matches)
+
+    useEffect(() => {
+        window
+            .matchMedia("(min-width: 620px)")
+            .addEventListener("change", e => setShowBigHeader(e.matches));
+    }, []);
+
+
     return (
-        <div className={style.fix}>
-            <div className={style.header}>
-                <div className={style.navContainer}>
-                    <Nav/>
+        <>
+            {showBigHeader
+                ?
+                <div className={style.fix}>
+                    <div className={style.header}>
+                        <div className={style.navContainer}>
+                            <Nav/>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+                :
+                <BurgerMenu/>
+            }
+        </>
     );
 }
 

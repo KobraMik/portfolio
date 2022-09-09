@@ -2,7 +2,7 @@
 @import "../Common/components/Button/Button.module";
 
 .contactsMain {
-  min-height: 100vh;
+  padding-bottom: 10px;
 
   .contacts {
     @include container();
@@ -11,7 +11,6 @@
     .contactsBlock {
       @include flex(row, space-between, auto, nowrap);
       width: 100%;
-      min-height: 70vh;
       @media screen and (max-width: 700px) {
         @include flex(column, space-between, center, nowrap);
       }
