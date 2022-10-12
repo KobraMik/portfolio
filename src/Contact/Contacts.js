@@ -38,9 +38,16 @@ function Contacts() {
                     <div className={styles.infoBlock}>
                         <h3>LET'S GET IN TOUCH</h3>
                         <div className={styles.info}>
-                            <div><strong>Phone</strong> +375 33 618-47-00</div>
-                            <div><strong>Email</strong> novickiy.mikhail@gmail.com</div>
-                            <div><strong>Address</strong> Minsk, Belarus</div>
+                            <div><strong>Phone</strong><a href="tel:+375336184700">+375 33 618-47-00</a></div>
+                            <div><strong>Email</strong><a
+                                href="mailto:novickiy.mikhail@gmail.com">novickiy.mikhail@gmail.com</a></div>
+                            <div><strong>GitHub</strong><a href="https://github.com/MichaelNovickiy">Click here</a>
+                            </div>
+                            <div><strong>LinkedIn</strong><a href="https://linkedin.com/in/michaelnovickiy">Click here</a>
+                            </div>
+                            <div><strong>Telegram</strong><a href="https://t.me/Michael_Novickiy">Click here</a>
+                            </div>
+                            <div><strong>Address</strong>Minsk, Belarus</div>
                         </div>
                     </div>
                     <form className={styles.form} onSubmit={onSubmitHandler}>

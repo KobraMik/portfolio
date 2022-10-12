@@ -25,12 +25,13 @@
 
         .info {
           div {
-            line-height: 2.2;
+            padding: 6px 0;
           }
 
           div strong {
+            font-size: 18px;
             display: inline-block;
-            width: 65px;
+            width: 83px;
             @media screen and (max-width: 900px) {
               display: block;
             }

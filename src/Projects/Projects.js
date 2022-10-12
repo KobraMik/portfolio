@@ -4,6 +4,7 @@ import Title from "../Common/components/Title/Title";
 import socialNetworkImg from "../assets/image/socialNetwork.jpg"
 import todoListImg from "../assets/image/Todolist.png"
 import sneakersMarketImg from "../assets/image/sneakersMarket.png"
+import onlineZoo from "../assets/image/onlineZoo.png"
 
 const projectsArr = [
     {
@@ -26,6 +27,13 @@ const projectsArr = [
         href: "https://github.com/MichaelNovickiy/sneakers-market",
         img: sneakersMarketImg,
         description: 'HTML/SCSS, React, React-Context, JavaScript, hooks'
+    },
+    {
+        id: 4,
+        title: "Online Zoo",
+        href: "https://rolling-scopes-school.github.io/michaelnovickiy-JSFE2022Q3/ONLINE-ZOO/pages/main/index.html",
+        img: onlineZoo,
+        description: 'HTML, SCSS, pixel perfect, BEM, mobile adaptability'
     },
 ]
 

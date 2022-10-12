@@ -5,11 +5,11 @@ import {BurgerMenu} from "./BurgerMenu/BurgerMenu";
 
 function Header() {
 
-    const [showBigHeader, setShowBigHeader] = useState(window.matchMedia("(min-width: 620px)").matches)
+    const [showBigHeader, setShowBigHeader] = useState(window.matchMedia("(min-width: 700px)").matches)
 
     useEffect(() => {
         window
-            .matchMedia("(min-width: 620px)")
+            .matchMedia("(min-width: 700px)")
             .addEventListener("change", e => setShowBigHeader(e.matches));
     }, []);
 
@@ -53,6 +53,14 @@ function Nav() {
                 offset={-30}
                 duration={500}
             >About me</Link>
+            <Link
+                activeClass={style.link}
+                to="resume"
+                spy={true}
+                smooth={true}
+                offset={-30}
+                duration={500}
+            >MY RESUME</Link>
             <Link
                 activeClass={style.link}
                 to="projects"
