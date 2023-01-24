@@ -17,7 +17,7 @@ const projectsArr = [
     {
         id: 2,
         title: "Todo list",
-        href: "https://github.com/MichaelNovickiy/todolistAgain.git",
+        href: "https://github.com/MichaelNovickiy/ToDoList",
         img: todoListImg,
         description: 'React, Redux, TypeScript, TDD (Jest, Snapshot testing, Storybook), RestAPI, MaterialUI, HTML/CSS, functional components, hooks'
     },
